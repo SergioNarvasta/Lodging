@@ -93,8 +93,6 @@ public class frame_principal extends javax.swing.JFrame {
         chek_ordenamesele1 = new javax.swing.JCheckBox();
         jLabel25 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -104,15 +102,15 @@ public class frame_principal extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(51, 0, 255));
+        jLabel19.setForeground(new java.awt.Color(0, 51, 255));
         jLabel19.setText("REGISTRO DE HUESPED");
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(51, 0, 255));
+        jLabel24.setForeground(new java.awt.Color(0, 51, 204));
         jLabel24.setText("Ing de Sistemas ");
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(51, 0, 255));
+        jLabel26.setForeground(new java.awt.Color(0, 51, 255));
         jLabel26.setText("SOFTWARE");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -141,7 +139,7 @@ public class frame_principal extends javax.swing.JFrame {
                 .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(253, Short.MAX_VALUE))
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Inicio", jPanel2);
@@ -237,7 +235,7 @@ public class frame_principal extends javax.swing.JFrame {
                 .addComponent(lik_estadohabitacion)
                 .addGap(18, 18, 18)
                 .addComponent(btn_registrarhabitacion)
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Habitaciones", jPanel3);
@@ -365,7 +363,7 @@ public class frame_principal extends javax.swing.JFrame {
                 .addComponent(btn_guardarhuesped)
                 .addGap(46, 46, 46)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Ingreso", jPanel4);
@@ -704,43 +702,22 @@ public class frame_principal extends javax.swing.JFrame {
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Listar", jPanel7);
 
-        jPanel8.setBackground(new java.awt.Color(204, 204, 255));
-
-        jButton3.setBackground(new java.awt.Color(51, 51, 255));
-        jButton3.setText("PRESIONE AQUI PARA SALIR");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jLabel21.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel21.setText("HASTA LUEGO");
+        jPanel8.setBackground(new java.awt.Color(51, 255, 51));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(142, Short.MAX_VALUE))
+            .addGap(0, 486, Short.MAX_VALUE)
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(273, Short.MAX_VALUE))
+            .addGap(0, 459, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("cerrar", jPanel8);
@@ -755,15 +732,14 @@ public class frame_principal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void chek_ordenamesele1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chek_ordenamesele1ActionPerformed
         if(chek_ordenamesele.isSelected())
@@ -999,7 +975,6 @@ public class frame_principal extends javax.swing.JFrame {
     private javax.swing.JCheckBox chek_ordenamesele;
     private javax.swing.JCheckBox chek_ordenamesele1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1011,7 +986,6 @@ public class frame_principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
